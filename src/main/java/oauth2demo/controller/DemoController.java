@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "hello", method = RequestMethod.GET)
     public String getHelloWorld() {
         return "Hello world!";
     }
